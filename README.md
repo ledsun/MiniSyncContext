@@ -1,9 +1,14 @@
 # MiniSyncContext
-C# �� async/await �̗������u�C�x���g���[�v�v�ƁuSynchronizationContext�v�����삵�Ċώ@����f���v���W�F�N�g�B
+C# の async/await の裏側を「イベントループ」と「SynchronizationContext」を自作して観察するデモプロジェクト。
 
-�uawait �̓����ŉ����N���Ă��邩�H�v�𗝉����邽�߂̊w�K�p�����ł��B
+「await の内部で何が起きているか？」を理解するための学習用実装です。
 
-## ���s���@
+## 動作環境
+
+- .net 9
+- C# 12
+
+## 実行方法
 
 ```bash
 git clone https://github.com/ledsun/MiniSyncContext.git
@@ -11,7 +16,7 @@ cd MiniSyncContext
 dotnet run
 ```
 
-## ���ʗ�
+## 結果例
 
 ```
 [tid:05] PeriodicEvents started.
